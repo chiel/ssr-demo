@@ -1,0 +1,30 @@
+{
+  "name": "ssr-demo",
+  "version": "1.0.0",
+  "main": "dist/server",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel -d dist src",
+    "start": "node dist/server",
+    "watch": "npm-run-all build -p watch:*",
+    "watch:nodemon": "nodemon -w dist dist/server",
+    "watch:server": "babel --skip-initial-build -w -d dist src",
+    "watch:webpack": "webpack -w"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-react": "^6.23.0",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^3.1.2",
+    "webpack": "^2.3.1"
+  }
+}

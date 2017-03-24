@@ -1,0 +1,14 @@
+{
+	"presets": [
+		[
+			"env",
+			{
+				"targets": {
+					"chrome": 50,
+					"node": "current"
+				}
+			}
+		],
+		"react"
+	]
+}
